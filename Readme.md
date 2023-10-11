@@ -23,3 +23,17 @@
 [Boletin3_4](https://github.com/LuciaPosada/Programacion/blob/main/Boletin03/boletin3_4/src/Extra_boletin3_4.java)
 
 [Boletin3_5](https://github.com/LuciaPosada/Programacion/blob/main/Boletin03/boletin3_5/src/Boletin3_5.java)
+
+## Boletin 4
+
+[Boletin4](https://github.com/LuciaPosada/Programacion/tree/main/Boletin04/boletin4/src)
+
+## Boletin 5
+
+## Boletin 6
+
+[Boletin6_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_1/src)
+
+[Boletin6_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_2/src)
+
+[Boletin6_3](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_3/src)
