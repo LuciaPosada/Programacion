@@ -30,6 +30,8 @@
 
 ## Boletin 5
 
+[Boletin5](https://github.com/LuciaPosada/Programacion/tree/main/Boletin05/boletin5/src)
+
 ## Boletin 6
 
 [Boletin6_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_1/src)
@@ -37,3 +39,15 @@
 [Boletin6_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_2/src)
 
 [Boletin6_3](https://github.com/LuciaPosada/Programacion/tree/main/Boletin06/boletin6_3/src)
+
+## Boletin 7
+
+[Boletin7_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_1/src)
+
+[Boletin7_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_2/src)
+
+[Boletin7_3](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_3/src)
+
+[Boletin7_4](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_4/src)
+
+[Boletin7_5](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_5/src)
