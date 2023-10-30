@@ -12,7 +12,7 @@ public class Numeros {
         
         while(i<10){
             
-            float num = LerDatos.lerEnteiro("Teclea numero");
+            int num = LerDatos.lerEnteiro("Teclea numero");
             
             if(num==0){
                 ceros++;
