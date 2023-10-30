@@ -51,3 +51,9 @@
 [Boletin7_4](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_4/src)
 
 [Boletin7_5](https://github.com/LuciaPosada/Programacion/tree/main/Boletin07/boletin7_5/src)
+
+## Boletin 8
+
+[Boletin8_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin08/boletin8_1/src)
+
+[Boletin8_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin08/boletin8_2/src)
