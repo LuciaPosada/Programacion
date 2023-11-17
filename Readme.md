@@ -60,6 +60,14 @@
 
 ## Boletin 9
 
+[Boletin9_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin09/boletin9_1/src)
+
+[Boletin9_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin09/boletin9_2/src)
+
+[Boletin9_4](https://github.com/LuciaPosada/Programacion/tree/main/Boletin09/boletin9_4/src)
+
+[Boletin9_5](https://github.com/LuciaPosada/Programacion/tree/main/Boletin09/boletin9_5/src)
+
 ## Boletin 11
 
 [Boletin11_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin11/boletin11_1/src)
