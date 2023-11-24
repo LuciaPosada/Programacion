@@ -73,3 +73,27 @@
 [Boletin11_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin11/boletin11_1/src)
 
 [Boletin11_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin11/boletin11_2/src)
+
+## Boletin 12
+
+[Boletin12](https://github.com/LuciaPosada/Programacion/tree/main/Boletin12/boletin12/src)
+
+## Boletin 14
+
+[Boletin14](https://github.com/LuciaPosada/Programacion/tree/main/Boletin14)
+
+## Boletin 15
+
+[Boletin15](https://github.com/LuciaPosada/Programacion/tree/main/Boletin15/boletin15/src/com/lucia/boletin15)
+
+## Extras
+
+# Extra 5
+
+[Extra5](https://github.com/LuciaPosada/Programacion/tree/main/Extras/Extra05/src)
+
+# Extra 6
+
+[Extra6_1](https://github.com/LuciaPosada/Programacion/tree/main/Extras/Extra06/Extras3_1/src)
+
+[Extra6_2](https://github.com/LuciaPosada/Programacion/tree/main/Extras/Extra06/extra6_2/src)
