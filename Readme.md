@@ -88,11 +88,11 @@
 
 ## Extras
 
-# Extra 5
+### Extra 5
 
 [Extra5](https://github.com/LuciaPosada/Programacion/tree/main/Extras/Extra05/src)
 
-# Extra 6
+### Extra 6
 
 [Extra6_1](https://github.com/LuciaPosada/Programacion/tree/main/Extras/Extra06/Extras3_1/src)
 
