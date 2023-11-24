@@ -17,7 +17,39 @@ public class SeleccionFutbol {
         this.apelidos = apelidos;
         this.edade = edade;
     }
-    
+
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getApelidos() {
+        return apelidos;
+    }
+
+    public int getEdade() {
+        return edade;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setApelidos(String apelidos) {
+        this.apelidos = apelidos;
+    }
+
+    public void setEdade(int edade) {
+        this.edade = edade;
+    }
+       
     public void concentrarse(){
         
     }
@@ -25,5 +57,10 @@ public class SeleccionFutbol {
     public void viaxar(){
         
     }
-    
+
+    @Override
+    public String toString() {
+        return "id=" + id + ", nome=" + nome + ", apelidos=" + apelidos + ", edade=" + edade + ", ";
+    }
+     
 }

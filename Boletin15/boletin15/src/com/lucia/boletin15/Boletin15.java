@@ -1,20 +1,29 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package com.lucia.boletin15;
 
-/**
- *
- * @author dam1
- */
+import java.util.Scanner;
+
 public class Boletin15 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Scanner sc = new Scanner(System.in);
+        
+        //SeleccionFutbol sf = new SeleccionFutbol();
+        
+        Futbolista f = new Futbolista(5,"centro",13,"Daniel","Fernandez",1);
+        
+        //System.out.println(sf.toString());
+        
+        System.out.println("Tecle a edade");
+        f.setEdade(sc.nextInt());
+        
+        System.out.println(f.toString());
+        
+        SeleccionFutbol e = new Entrenador("1E", 56, "Lucas", "Villar", 24);
+        
+        System.out.println(e);
+               
     }
     
 }

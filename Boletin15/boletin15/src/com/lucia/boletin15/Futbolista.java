@@ -15,6 +15,22 @@ public class Futbolista extends SeleccionFutbol{
         this.demarcacion = demarcacion;
     }
 
+    public int getDorsal() {
+        return dorsal;
+    }
+
+    public String getDemarcacion() {
+        return demarcacion;
+    }
+
+    public void setDorsal(int dorsal) {
+        this.dorsal = dorsal;
+    }
+
+    public void setDemarcacion(String demarcacion) {
+        this.demarcacion = demarcacion;
+    }
+    
     public void xogarPartido(){
         
     }
@@ -22,5 +38,10 @@ public class Futbolista extends SeleccionFutbol{
     public void entrenar(){
         
     }
+
+    @Override
+    public String toString() {
+        return "Futbolista: "+super.toString() + "dorsal=" + dorsal + ", demarcacion=" + demarcacion;
+    }  
     
 }

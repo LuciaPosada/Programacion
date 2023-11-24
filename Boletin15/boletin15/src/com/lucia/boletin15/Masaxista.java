@@ -14,9 +14,30 @@ public class Masaxista extends SeleccionFutbol{
         this.titulacion = titulacion;
         this.anosExperiencia = anosExperiencia;
     }
-    
+
+    public String getTitulacion() {
+        return titulacion;
+    }
+
+    public int getAnosExperiencia() {
+        return anosExperiencia;
+    }
+
+    public void setTitulacion(String titulacion) {
+        this.titulacion = titulacion;
+    }
+
+    public void setAnosExperiencia(int anosExperiencia) {
+        this.anosExperiencia = anosExperiencia;
+    }
+     
     public void darMaxases(){
         
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+ "titulacion=" + titulacion + ", anosExperiencia=" + anosExperiencia + '}';
     }
     
 }

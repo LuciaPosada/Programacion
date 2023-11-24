@@ -12,9 +12,24 @@ public class Entrenador extends SeleccionFutbol{
         super(id, nome, apelidos, edade);
         this.idFederacion = idFederacion;
     }
-    
+
+    public String getIdFederacion() {
+        return idFederacion;
+    }
+
+    public void setIdFederacion(String idFederacion) {
+        this.idFederacion = idFederacion;
+    }
+      
     public void dirixirEntrenamiento(){
         
     }
+
+    @Override
+    public String toString() {
+        return "Entrenador: "+super.toString() + "idFederacion=" + idFederacion;
+    }
+    
+    
     
 }
