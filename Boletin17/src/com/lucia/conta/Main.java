@@ -25,7 +25,7 @@ public class Main {
                                                                   1. Crear nuevo cliente
                                                                   2. Crear nueva cuenta corriente
                                                                   3. Crear nueva cuenta de ahorros
-                                                                  4. Reakuzar operaciones
+                                                                  4. Realizar operaciones
                                                                   5. Salir"""));
 
             switch (opcion) {
@@ -106,13 +106,17 @@ public class Main {
                         
                         int opcionSalirOperaciones = 2;
                         
+                        
+                        do{
+                            
                         int opcionOperacion=Integer.parseInt(JOptionPane.showInputDialog("""
                                                                                          Menu: 
                                                                                          1. Ingersar 
                                                                                          2. Retirar 
                                                                                          3. Mostrar estado de cuenta 
                                                                                          4. Cancelar"""));
-                        do{
+
+                            
                             switch(opcionOperacion){
                             
                                 case 1:
@@ -131,7 +135,8 @@ public class Main {
 
                                 case 3:
 
-                                    JOptionPane.showMessageDialog(null, conta);
+                                    JOptionPane.showMessageDialog(null, actualCuenta.toString());
+                                    break;
                                 
                                 case 4:
                                     
@@ -142,12 +147,14 @@ public class Main {
                                 
                                     JOptionPane.showMessageDialog(null, "Error, pruebe de nuevo");
                                     break;                                
-                            }
+                            }                         
                             
                         }while(opcionSalirOperaciones != 0);
                         
                     }else{
+                        
                         JOptionPane.showMessageDialog(null, "No exixte ninguna cuenta en la base de datos con ese numero de cuenta");
+                        
                     }
                     
                     break;

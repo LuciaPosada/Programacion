@@ -60,7 +60,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Numero de Conta=" + numeroConta + ", Saldo=" + saldo +" €"+ ", Cliente: " + cliente;
+        return "Numero de Conta =" + numeroConta + ", Saldo =" + saldo +" €"+ ", Cliente: " + cliente;
     }
     
     

@@ -42,7 +42,7 @@ public class Persoa {
 
     @Override
     public String toString() {
-        return "Nome= " + nome + ", Apelido= " + apelido + ", DNI= " + dni ;
+        return "Nome = " + nome + ", Apelido = " + apelido + ", DNI = " + dni ;
     }
     
     
