@@ -49,7 +49,7 @@ public class Conta {
             saldo-=cant;
             actualizarSaldo();
         } else {
-            JOptionPane.showInternalConfirmDialog(null, "Saldo insuficiente");
+            JOptionPane.showMessageDialog(null, "Saldo insuficiente");
         }
 
     }
@@ -60,7 +60,7 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Numero de Conta=" + numeroConta + ", Saldo=" + saldo + ", Cliente: " + cliente;
+        return "Numero de Conta=" + numeroConta + ", Saldo=" + saldo +" €"+ ", Cliente: " + cliente;
     }
     
     

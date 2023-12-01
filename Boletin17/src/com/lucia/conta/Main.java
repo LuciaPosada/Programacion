@@ -100,9 +100,9 @@ public class Main {
                     }
                     
                     long numContaComprovacion = Long.parseLong(JOptionPane.showInputDialog("Ingrese el numero de Cuenta"));
-                    Conta comprobacionCuenta = encontrarCuenta(conta, numContaComprovacion);
+                    Conta actualCuenta = encontrarCuenta(conta, numContaComprovacion);
                     
-                    if(comprobacionCuenta != null){
+                    if(actualCuenta != null){
                         
                         int opcionSalirOperaciones = 2;
                         
@@ -118,15 +118,15 @@ public class Main {
                                 case 1:
 
                                     double deposito = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la cantidad de dinero a depositar"));
-                                    conta.enter(deposito);
-                                    JOptionPane.showMessageDialog(null, "Operacion completada \nBalance: "+conta.getSaldo());
+                                    actualCuenta.ingresar(deposito);
+                                    JOptionPane.showMessageDialog(null, "Operacion completada \nBalance: "+actualCuenta.getSaldo()+" €");
                                     break;
    
                                 case 2:
 
                                     double cantRetirada = Double.parseDouble(JOptionPane.showInputDialog("Ingrese la cantidad de dinero a depositar"));
-                                    conta.withdraw(cantRetirada);
-                                    JOptionPane.showMessageDialog("Operacion completada \nBalance: "+conta.getSaldo());
+                                    actualCuenta.retirar(cantRetirada);
+                                    JOptionPane.showMessageDialog(null,"Operacion completada \nBalance: "+actualCuenta.getSaldo()+" €");
                                     break;
 
                                 case 3:

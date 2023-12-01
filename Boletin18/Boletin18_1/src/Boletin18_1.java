@@ -19,7 +19,7 @@ public class Boletin18_1 {
 
             double total = Calculos.calcularCoste(duracion, dia, parteDia);
 
-            JOptionPane.showMessageDialog(null, "Total cost for the call: " + total + " euros");
+            JOptionPane.showMessageDialog(null, "Precio de la llamada: " + total + " €");
             
             continuar = JOptionPane.showConfirmDialog(null,"Desea cerrar el programa?");
 

@@ -11,13 +11,13 @@ public class Boletin18_2 {
 
         do {
 
-            double peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso del paquete a enviar en kilo gramos"));
+            double peso = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el peso del paquete a enviar en kg"));
 
 	    if (peso < 5) {
 
 		int destino = Integer.parseInt(JOptionPane.showInputDialog("Seleccione de las posibles opcciones el destino del paquete: \n1. America del Norte\n2. America Central\n3. America del Sur\n4. Europa\n5. Asia"));
 		double precioFinal = Calculos.calcularPrecioEnvio(peso, destino);
-		JOptionPane.showMessageDialog(null,"Costo de envio: " +precioFinal);
+		JOptionPane.showMessageDialog(null,"Costo de envio: " +precioFinal+ " €");
 
 	    }else if(peso > 5){
 
@@ -28,8 +28,6 @@ public class Boletin18_2 {
             opcionContinuar = JOptionPane.showConfirmDialog(null,"¿Desea cerrar el programa?");
 
         } while (opcionContinuar != 0);
-
-    JOptionPane.showMessageDialog(null,"Cerrando Programa");
         
     }
 }
