@@ -150,6 +150,12 @@
 </details>
 
 <details open>
+<summary> Boletin 22 </summary>
+
+[Boletin22](https://github.com/LuciaPosada/Programacion/tree/main/Boletin22/src)
+</details>
+
+<details open>
 <summary> Boletin 23 </summary>
 
 [Boletin23](https://github.com/LuciaPosada/Programacion/tree/main/Boletin23/src)
