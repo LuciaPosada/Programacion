@@ -39,6 +39,10 @@ public class Libro {
         return isbn;
     }
 
+    public int getNumUnidades() {
+        return numUnidades;
+    }
+
     @Override
     public String toString() {
         return titulo + "\t" + autor + "\t" + isbn + "\t" + numUnidades + "\t" + precio;

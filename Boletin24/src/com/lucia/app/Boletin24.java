@@ -22,7 +22,7 @@ public class Boletin24 {
                                                                   1. Anadir nuevo libro
                                                                   2. Vender libros
                                                                   3. Mostar listado de libros
-                                                                  4. Mostrar informacion de un linro
+                                                                  4. Mostrar informacion de un libro
                                                                   5. Salir del sistema"""));
 
             switch (opcion) {

@@ -57,6 +57,8 @@ public class Funciones {
         
         libVender.actualizarUnidades(cant);
         
+        Funciones.darBajaLibros(libVender, isbn);
+        
     }
     /**
      * Muestra el listado de los libros ordenado alfabeticamente
@@ -65,21 +67,10 @@ public class Funciones {
         
         Collections.sort(listado, (t1,t2) -> t1.getTitulo().compareTo(t2.getTitulo()));
         
-        /*System.out.println("Titulo\tAutor\tISBN\tUnidades\tPrecio");
+        System.out.println("Titulo\tAutor\tISBN\tUnidades\tPrecio");
         
         for(Libro l: listado) {
             System.out.println(l);
-        }*/
-        
-        System.out.print("   ");
-        for(int a = 0; a < 8; a++) {
-            System.out.printf("%3d", a);
-        }
-
-        System.out.printf("%n");
-        for(Libro l: listado) {
-            System.out.printf("%3d ", l);
-            System.out.println();
         }
         
     }
@@ -93,7 +84,16 @@ public class Funciones {
         
         JOptionPane.showMessageDialog(null, libVender);
     }
-
+    
+    public static void darBajaLibros(Libro lib,String isbn){
+        
+        if (lib.getNumUnidades()==0){
+            listado.removeIf(i -> i.getIsbn()==isbn);
+            JOptionPane.showMessageDialog(null, "El libro ha sido dado de baja");
+        }else{
+            JOptionPane.showMessageDialog(null, "El numero de unidades en stock restantes es de "+lib.getNumUnidades());
+        }
+    }
     /**
      * Metodo auxiliar para buscar un libro por su ISBN
      * @param listado lista de los libros
