@@ -45,8 +45,9 @@ public class Libro {
 
     @Override
     public String toString() {
-        return titulo + "\t" + autor + "\t" + isbn + "\t" + numUnidades + "\t" + precio;
+        return String.format("%-28s%-23s%-22s%-10d%-10.2f", titulo, autor, isbn, numUnidades, precio);
     }
+
     
     /**
      * Metodo que actualiza el numero de unidades en stock

@@ -2,6 +2,7 @@
 
 package com.lucia.libreria;
 
+import com.lucia.excepciones.ExcepcionNull;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -26,7 +27,7 @@ public class Funciones {
         
         listado.add(new Libro("Teo va al zoo","Violeta Denou","782-36-598-0736-4",46,6.5f));
         
-        listado.add(new Libro("Heartstopper","Alice Oseman","'247-09-237-2013-8",73,19.7f));
+        listado.add(new Libro("Heartstopper","Alice Oseman","247-09-237-2013-8",73,19.7f));
         
         listado.add(new Libro("Cocina de 10","Karlos Arguiñano","173-86-836-7845-7",24,23.6f));
         
@@ -67,7 +68,7 @@ public class Funciones {
         
         Collections.sort(listado, (t1,t2) -> t1.getTitulo().compareTo(t2.getTitulo()));
         
-        System.out.println("Titulo\tAutor\tISBN\tUnidades\tPrecio");
+        System.out.printf("%-28s%-23s%-22s%-10s%-10s%n", "Titulo", "Autor", "ISBN", "Unidades", "Precio");
         
         for(Libro l: listado) {
             System.out.println(l);
@@ -80,9 +81,23 @@ public class Funciones {
      */
     public static void mostrarLibro(String isbn){
         
-        Libro libVender = Funciones.encontraLibro(listado, isbn);
-        
-        JOptionPane.showMessageDialog(null, libVender);
+        try{
+            
+            Libro libVender = Funciones.encontraLibro(listado, isbn);
+       
+            if(libVender==null){
+                
+                throw new ExcepcionNull("ISBN no encontrado");
+                
+            }else{
+                
+                JOptionPane.showMessageDialog(null, libVender);
+                
+            }
+            
+        }catch (ExcepcionNull e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
     }
     
     public static void darBajaLibros(Libro lib,String isbn){
