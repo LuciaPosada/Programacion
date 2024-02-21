@@ -54,11 +54,26 @@ public class Funciones {
      */
     public static void venderLibro(int cant, String isbn){
         
-        Libro libVender = Funciones.encontraLibro(listado, isbn);
+        try{
         
-        libVender.actualizarUnidades(cant);
+            Libro libVender = Funciones.encontraLibro(listado, isbn);
+            
+            if(libVender==null){
+                
+                throw new ExcepcionNull("ISBN no encontrado");
+                
+            }else{
+                
+                libVender.actualizarUnidades(cant);
         
-        Funciones.darBajaLibros(libVender, isbn);
+                Funciones.darBajaLibros(libVender, isbn);
+            }
+        
+        }catch (ExcepcionNull e){
+            
+            JOptionPane.showMessageDialog(null, e.getMessage());
+            
+        }
         
     }
     /**
