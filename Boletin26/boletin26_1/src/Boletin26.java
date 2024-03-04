@@ -9,7 +9,7 @@ public class Boletin26 {
 
     public static void main(String[] args) {
         
-        ArrayList nums = new ArrayList<>();
+        ArrayList<Integer> nums = new ArrayList<>();
         
         Random r = new Random();
         
