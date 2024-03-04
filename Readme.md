@@ -161,6 +161,20 @@
 [Boletin23](https://github.com/LuciaPosada/Programacion/tree/main/Boletin23/src)
 </details>
 
+<details open>
+<summary> Boletin 24 </summary>
+
+[Boletin24](https://github.com/LuciaPosada/Programacion/tree/main/Boletin24/src/com/lucia)
+</details>
+
+<details open>
+<summary> Boletin 26 </summary>
+
+[Boletin26_1](https://github.com/LuciaPosada/Programacion/tree/main/Boletin26/boletin26_1/src)
+
+[Boletin26_2](https://github.com/LuciaPosada/Programacion/tree/main/Boletin26/boletin26_2)
+</details>
+
 ## Extras
 
 <details>
