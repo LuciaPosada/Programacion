@@ -1,13 +1,13 @@
 
 package conversortemperatura;
 
+import javax.swing.*;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.*;
 
 public class ConversorGUI {
-    
+
     private static JFrame ventana;
     private static JLabel temperaturaCelsius;
     private static JLabel temperaturaFahrenheit;
@@ -15,44 +15,58 @@ public class ConversorGUI {
     private static JTextField textoFahrenheit;
     private static JButton botonCelsius;
     private static JButton botonFahrenheit;
-    
+
     public ConversorGUI() {
-    
-        // Genral
-        
-        ventana = new JFrame("Covensor de Temperatura");
-        ventana.setSize(190, 220);
+
+        // General
+
+        ventana = new JFrame("Conversor de Temperatura");
+        ventana.setSize(200, 220);
         ventana.setLayout(new FlowLayout());
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        ventana.setLocationRelativeTo(null);
+        ventana.setResizable(false);
+
         // Componentes
-        
+
         temperaturaCelsius = new JLabel("Grados Celsius:");
         temperaturaFahrenheit = new JLabel("Grados Fahrenheit");
-         
-        textoCelsius = new JTextField(13);
-        textoFahrenheit = new JTextField(13);
-       
-        botonCelsius = new JButton("Convertir a Celsius");
-        botonCelsius.addActionListener(new ActionListener(){
-            public void actionPerformed(ActionEvent e){
-                textoCelsius.setText(String.valueOf(Calculos.calcularConversionTemperatura(Double.parseDouble(textoFahrenheit.getText()), Calculos.CELSIUS)));
 
+        textoCelsius = new JTextField(10);
+        textoFahrenheit = new JTextField(10);
+
+        botonCelsius = new JButton("Convertir a Celsius");
+        botonCelsius.addActionListener((ActionEvent e) -> {
+            try {
+                double fahrenheit = Double.parseDouble(textoFahrenheit.getText());
+                double celsius = Calculos.calcularConversionTemperatura(fahrenheit, Calculos.CELSIUS);
+                textoCelsius.setText(String.format("%.2f", celsius));
+            } catch (NumberFormatException ex) {
+                JOptionPane.showMessageDialog(ventana, "Por favor, ingrese un valor numérico válido en Fahrenheit.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         });
+
         botonFahrenheit = new JButton("Convertir a Fahrenheit");
-        botonFahrenheit.addActionListener((ActionEvent e) -> {
-                textoFahrenheit.setText(String.valueOf(Calculos.calcularConversionTemperatura(Double.parseDouble(textoCelsius.getText()), Calculos.FAHRENHEIT)));
+        botonFahrenheit.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    double celsius = Double.parseDouble(textoCelsius.getText());
+                    double fahrenheit = Calculos.calcularConversionTemperatura(celsius, Calculos.FAHRENHEIT);
+                    textoFahrenheit.setText(String.format("%.2f", fahrenheit));
+                } catch (NumberFormatException ex) {
+                    JOptionPane.showMessageDialog(ventana, "Por favor, ingrese un valor numérico válido en Celsius.", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
         });
-        
+
         ventana.add(temperaturaCelsius);
         ventana.add(textoCelsius);
-        ventana.add(temperaturaFahrenheit);  
-        ventana.add(textoFahrenheit);
         ventana.add(botonCelsius);
+        ventana.add(temperaturaFahrenheit);
+        ventana.add(textoFahrenheit);
         ventana.add(botonFahrenheit);
-        
+
         ventana.setVisible(true);
     }
-    
 }
+
