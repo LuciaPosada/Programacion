@@ -13,8 +13,11 @@ public class Equipo {
     
     private double saludTotal;
 
-    public Equipo(ArrayList<Campeon> equipo) {
+    private String nombre;
+
+    public Equipo(ArrayList<Campeon> equipo,String nombre) {
         this.equipo = equipo;
+        this.nombre = nombre;
         this.ataqueTotal = calcularAtaqueTotal(equipo);
         this.defensaTotal = calcularDefensaTotal(equipo);
         this.saludTotal = calcularSaludTotal(equipo);
@@ -32,6 +35,14 @@ public class Equipo {
         return defensaTotal;
     }
 
+    public double getSaludTotal() {
+        return saludTotal;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
     public void setEquipo(ArrayList<Campeon> equipo) {
         this.equipo = equipo;
     }
@@ -42,6 +53,14 @@ public class Equipo {
 
     public void setDefensaTotal(double defensaTotal) {
         this.defensaTotal = defensaTotal;
+    }
+
+    public void setSaludTotal(double saludTotal) {
+        this.saludTotal = saludTotal;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     private double calcularAtaqueTotal(ArrayList<Campeon> equipo){
