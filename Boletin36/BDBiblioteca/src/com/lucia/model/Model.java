@@ -2,6 +2,7 @@
 package com.lucia.model;
 
 import java.util.HashMap;
+import java.util.List;
 
 public class Model {
     
@@ -46,4 +47,8 @@ public class Model {
         libro.anoPublicacion = anoPublicacion;
         libro.disponible = disponible;
     }
+    
+    /*public static List<Libro> buscarLibros(){
+
+    }*/
 }
