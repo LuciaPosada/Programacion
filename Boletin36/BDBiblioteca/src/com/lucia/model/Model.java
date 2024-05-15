@@ -17,7 +17,7 @@ public class Model {
         Libro libro = new Libro(id, titulo, autor, anoPublicacion);
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String query = "INSERT INTO libros (id, titulo, autor, ano_publicacion) VALUES (?, ?, ?, ?)";
+            String query = "INSERT INTO Libros (id, titulo, autor, ano_publicacion) VALUES (?, ?, ?, ?)";
             PreparedStatement statement = conn.prepareStatement(query);
             statement.setInt(1, id);
             statement.setString(2, titulo);
@@ -39,7 +39,7 @@ public class Model {
 
     public static void eliminarLibro(int id) {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String query = "DELETE FROM libros WHERE id = ?";
+            String query = "DELETE FROM Libros WHERE id = ?";
             try (PreparedStatement statement = conn.prepareStatement(query)) {
                 statement.setInt(1, id);
 
@@ -60,7 +60,7 @@ public class Model {
         Libro libro = null;
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String query = "SELECT id, titulo, autor, ano_publicacion FROM libros WHERE id = ?";
+            String query = "SELECT id, titulo, autor, ano_publicacion FROM Libros WHERE id = ?";
             try (PreparedStatement statement = conn.prepareStatement(query)) {
                 statement.setInt(1, id);
 
@@ -76,7 +76,7 @@ public class Model {
                 }
             }
         } catch (SQLException e) {
-            System.err.println("Error al obtener el libro por ID: " + e.getMessage());
+            System.err.println("Error al obtener el Libro por ID: " + e.getMessage());
         }
 
         return libro;
@@ -100,7 +100,7 @@ public class Model {
     
     public static void actualizarLibro(Libro libro) {
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String query = "UPDATE libros SET titulo = ?, autor = ?, ano_publicacion = ?, disponible = ? WHERE id = ?";
+            String query = "UPDATE Libros SET titulo = ?, autor = ?, ano_publicacion = ?, disponible = ? WHERE id = ?";
             try (PreparedStatement statement = conn.prepareStatement(query)) {
                 statement.setString(1, libro.titulo);
                 statement.setString(2, libro.autor);
@@ -125,7 +125,7 @@ public class Model {
         Libro libroEncontrado = null;
     
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            String query = "SELECT id, titulo, autor, ano_publicacion FROM libros WHERE titulo LIKE ?";
+            String query = "SELECT id, titulo, autor, ano_publicacion FROM Libros WHERE titulo LIKE ?";
             try (PreparedStatement statement = conn.prepareStatement(query)) {
                 statement.setString(1, "%" + titulo + "%");
     
@@ -151,7 +151,7 @@ public class Model {
         List<Libro> librosEncontrados = new ArrayList<>();
 
         try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
-            StringBuilder queryBuilder = new StringBuilder("SELECT id, titulo, autor, ano_publicacion FROM libros WHERE 1 = 1");
+            StringBuilder queryBuilder = new StringBuilder("SELECT id, titulo, autor, ano_publicacion FROM Libros WHERE 1 = 1");
 
             if (titulo != null && !titulo.isEmpty()) {
                 queryBuilder.append(" AND titulo LIKE ?");
