@@ -1,6 +1,4 @@
 
-package com.lucia.model;
-
 public class Libro {
     
     public int id;
@@ -19,6 +17,14 @@ public class Libro {
         this.autor = autor;
         this.anoPublicacion = anoPublicacion;
         this.disponible = true;
+    }
+
+    public Libro(int id, String titulo, String autor, int anoPublicacion, boolean disponible) {
+        this.id = id;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.anoPublicacion = anoPublicacion;
+        this.disponible = disponible;
     }
     
 }
